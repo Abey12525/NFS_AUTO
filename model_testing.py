@@ -1,12 +1,10 @@
-#import numpy as np
-#from grabscreen import grab_screen
-#import cv2
-#import time
-#from directkeys import PressKey,ReleaseKey, W, A, S, D
+import numpy as np
+from grabscreen import grab_screen
+import cv2
+import time
+from directkeys import PressKey,ReleaseKey, W, A, S, D
 from alexnet import alexnet
-#from getkeys import key_check
-
-#import random
+from getkeys import key_check
 
 WIDTH = 160
 HEIGHT = 120
@@ -49,12 +47,20 @@ def main():
 				prediction=model.predict([screen.reshape(WIDTH,HEIGHT,1)])[0]
 				moves=list(np.around(prediction))
 				print(moves)
-				if moves==[1,0,0]:
+				if moves==[1,0,0,0,0,0,0]:
 					acc()
-				elif moves==[0,1,0]:
+				elif moves==[0,1,0,0,0,0,0]:
 					left()
-				elif moves==[0,0,1]:
+				elif moves==[0,0,1,0,0,0,0]:
 					right()
+				elif moves==[0,0,0,1,0,0,0]:
+					
+				elif moves==[0,0,0,0,1,0,0]:
+					
+				elif moves==[0,0,0,0,0,1,0]:
+					
+				elif moves==[0,0,0,0,0,0,1]:
+					
 			keys=key_check()
 			if 'P' in keys:
 				if paused:
