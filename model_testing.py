@@ -15,7 +15,6 @@ EPOCHS = 10
 MODEL_NAME = 'pygta5-car-fast-{}-{}-{}-epochs-300K-data.model'.format(LR, 'alexnetv2',EPOCHS)
 
 t_time = 0.09
-"""
 def acc():
 	PressKey(DIK_W)
 
@@ -36,15 +35,10 @@ def tech1():
 	
 def tech2():
 	PressKey(DIK_D)
-	
-"""	
-print("Testing the damn thing")	
-	
+print("Loading the Model")	
 model=alexnet(WIDTH,HEIGHT,LR)
 model.load(MODEL_NAME)
-print("test okay")
-
-"""	
+print(MODEL_NAME+"  loaded succesfully")
 def main():
 		paused=False 
 		while True:
@@ -78,5 +72,4 @@ def main():
 					time.sleep(0.5)
 					
 					
-					
-main()"""
+main()
