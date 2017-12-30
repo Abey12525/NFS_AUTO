@@ -50,17 +50,17 @@ def main():
 				if moves==[1,0,0,0,0,0,0]:
 					acc()
 				elif moves==[0,1,0,0,0,0,0]:
-					left()
+					rev()
 				elif moves==[0,0,1,0,0,0,0]:
-					right()
+					left()
 				elif moves==[0,0,0,1,0,0,0]:
-					
+					right()
 				elif moves==[0,0,0,0,1,0,0]:
-					
+					nit()
 				elif moves==[0,0,0,0,0,1,0]:
-					
+					tech1()
 				elif moves==[0,0,0,0,0,0,1]:
-					
+					tech2()
 			keys=key_check()
 			if 'P' in keys:
 				if paused:
