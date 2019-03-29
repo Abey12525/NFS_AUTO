@@ -1,7 +1,5 @@
 # NFS_AUTO9
-automation of NFS Rivals using python<br>
-Based on the project python plays GTA V by Harrison <br>
-https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
-<br>
-https://github.com/Sentdex/pygta5
-       
+it is bot used to control the vehicles in NFS rivals.<br> 
+This project uses openCV to capture the frames and use it as input to 
+the network to be trained 
+the key presses are recored as well to be used as label for the training 
